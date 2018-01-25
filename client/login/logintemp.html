@@ -1,0 +1,26 @@
+<ul>
+    <li><a ng-show="$ctrl.loginserv.showall" ng-click="$ctrl.loginserv.showfun()">Log In</a></li>
+    <li><a href="#/">Home</a></li>
+    <li><a ng-show="$ctrl.loginserv.showall" href="#regist">Regist</a></li>
+    <li><a ng-show="!$ctrl.loginserv.showall" href="#myjob">My Jobs</a></li>
+    <li><a ng-show="!$ctrl.loginserv.showall" href="#myapplyjob">My Apply Jobs</a></li>
+    <li><a ng-show="!$ctrl.loginserv.showall" href="#myprofile">{{username}}</a></li>
+    <li id="liser">
+        <search-component></search-component>
+    </li>
+    <li id="addjob"><a ng-show="!$ctrl.loginserv.showall" href="#addjob"> Add Job </a></li>
+    <li><a ng-show="!$ctrl.loginserv.showall" href="#userapply">Users Apply</a></li>
+        <li><a ng-show="!$ctrl.loginserv.showall" href="#agent">Just For You Today</a></li>
+    <li ng-show="!$ctrl.loginserv.showall" href="#/" ng-click="$ctrl.loginserv.reload()" style="float:right"><a class="active">LOGOUT</a></li>
+</ul>
+<div class="regist1" ng-show="$ctrl.loginserv.show">
+    <form>
+        <label for="username">UserName</label>
+        <input class="login" ng-model="username" id="title" type="text">
+        <br><label for="password">Password</label>
+        <input class="login" ng-model="password" id="body" type="password">
+        <button class="login-click" ng-click="$ctrl.click(username,password)">LOGIN</button>
+    </form>
+</div>
+
+<ng-view></ng-view>

@@ -1,0 +1,30 @@
+<table>
+    <thead>
+        <th>Name</th>
+        <th>Email</th>
+        <th> Password</th>
+        <th> location</th>
+        <th> Skills</th>
+        <th> Edit</th>
+    </thead>
+    <tbody>
+        <tr calss="main">USER PROFILE</tr>
+        <tr>
+            <td> <input ng-show="showDiv" ng-model="username" type="text"> <span ng-show="!showDiv">{{$ctrl.user.firstname}}</span>                </td>
+            <td> <span>{{$ctrl.user.email}}</span> </td>
+            <td> <input ng-model="password" ng-show="showDiv" type="text"> <span ng-show="!showDiv"> {{$ctrl.user.password}}</span>                </td>
+            <td> <input ng-show="showDiv" id="address" ng-model="location" type="text"> <span ng-show="!showDiv">{{$ctrl.user["location "]}}</span>                </td>
+            <td>
+                <div ng-show="showDiv">
+                    <select ng-model="skill">
+                <option ng-repeat="skill in $ctrl.skills track by $index" value={{skill.id}} >{{skill.skill}}</option>
+                </select>
+                    <button ng-click="$ctrl.EditProfile.addskill(skill)"> Add Skill</button>
+                    <div ng-repeat="skillch in $ctrl.EditProfile.skillslist track by $index">{{$ctrl.skills[skillch-1].skill}} <span ng-click="$ctrl.EditProfile.deleteSkill($index)">(X)</span>                        </div>
+                </div>
+                <div ng-show="!showDiv" ng-repeat="skillch1 in $ctrl.EditProfile.skillslist track by $index">{{$ctrl.skills[skillch1-1].skill}}</div>
+            </td>
+            <td> <button ng-click="showDiv = !showDiv" ng-show="!showDiv"> Edit </button> <button ng-show="showDiv" ng-click="$ctrl.editmyprofile(username,email,password,location);showDiv=!showDiv">Done</button>                </td>
+        </tr>
+    </tbody>
+</table>

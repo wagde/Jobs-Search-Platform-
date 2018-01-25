@@ -1,0 +1,31 @@
+<table>
+    <thead>
+        <th>JobName</th>
+        <th>Description</th>
+        <th ng-click="$ctrl.testService.filterPlace()"> Location</th>
+        <th>Publish date</th>
+        <th> Skills</th>
+        <th>Apply Now</th>
+        <th>On Map</th>
+    </thead>
+    <tbody>
+        <tr calss="main" > JOB LIST</tr>
+        <div id="distance" ng-show="!$ctrl.showapply">
+          <span id="titledistance"><h4>Check Jobs Near You</h4> </span>
+        <input id="myselect"  ng-model="val" ng-change="$ctrl.get(val)" type="range" value="0" min="0" max="500"  value="1000000">
+        </div>
+        <tr ng-repeat='name in $ctrl.message track by $index'>
+            <td> {{name.jobname[0]}} </td>
+            <td> {{name.description[0]}}</td>
+            <td> {{name.location[0]}}</td>
+            <td>{{name.pub_date[0]}}</td>
+            <td>
+                <span ng-repeat='name1 in name.jobSkills'>  {{name1}}</br></span>
+
+            </td>
+            <td><button ng-click="$ctrl.testService.applyjob(name._id,name.apply_id[0],'apply')" ng-disabled="$ctrl.showapply">APPLY</button></td>
+            <td> <button ng-click="$ctrl.maps.getlatlung(name.location[0],name.description[0],name.jobname[0])">Show</button></td>
+        </tr>
+
+    </tbody>
+</table>

@@ -1,0 +1,360 @@
+body{
+    background-image: url("http://www.canadianbusiness.com/wp-content/uploads/2016/04/canada-best-jobs-2016-online-job-hunting-apps-services-BY-aleksandar-savic.png");
+    background-size: 100%;
+}
+
+
+
+table {
+    border-collapse: collapse;
+    margin-left: 0px;
+    width: 922px;
+    border-bottom: 1px;
+    border-top: 1px;
+    border-left: 1px;
+    border-right:1px; 
+
+    border-bottom-style: solid;
+
+ border-radius: 10px;
+     box-shadow: 4px 5px 2px black;
+                text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+
+    
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+
+}
+
+ tr{background-color: #f2f2f2} 
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+#but{
+ border-style: solid;
+ border-width: 2px;
+}
+#loginshow{
+    border: solid;
+        margin-right: 1090px;
+        border-color: green;
+
+}
+    a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+a:hover {
+    background-color: black;
+    color: green;
+}
+
+.previous {
+    background-color: wheat;
+    color: black;
+}
+
+.next {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.round {
+    border-radius: 50%;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+        height: 56px;
+          border-radius: 10px;
+               text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+        padding-top: 20px;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+
+    height: 23px;
+
+}   
+
+.regform {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #555;
+    outline: none;
+}
+
+.regform  {
+    background-color: lightgreen;
+}
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+select {
+    padding: 16px 20px;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+
+    padding-bottom: 10px;
+    padding-top: 6px;
+
+}
+input[type=button]{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10%;
+}
+
+#ser[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+#ser[type=text]:focus {
+    width: 45%;
+}
+#liser{
+        width: 252px;
+
+}
+#serform{
+    width: 340px;
+
+}      
+  
+#serclick{
+     background-color: #4CAF50;
+    border: none;
+    color: white;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10%;
+
+}
+.regist1{
+    background-color: #4CAF50;
+   position: fixed;
+    bottom: 0px;
+   
+    left: 944px;
+    top: 80px;
+
+    height: 174px;
+         border-radius: 5px;
+         color: white;
+         z-index: 1;
+             box-shadow: 4px 1px 2px black;
+
+}
+    .regist{
+    background-color: white;
+
+      }
+ 
+#addjob{
+    margin-left: 29px
+     }
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid gray;
+    box-sizing: border-box;
+} 
+  h3 img {
+    max-height: 50px;
+}
+#map { 
+     border-radius: 50px;
+    border: 1px solid silver;
+    position: absolute ;
+    left: 966px;
+    top: 270px;
+    width: 300px;
+    height: 300px;
+    box-shadow: 4px 5px 2px black;
+
+}
+.infoWindowContent {
+    font-size:  14px !important;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+#distance{
+    position: absolute;
+ 
+   
+    left: 965px;
+    top: 75px;
+     background: #4CAF50;
+    height: 134px;
+
+    width: 308px;
+ border-radius: 10%;
+
+}
+#titledistance{
+    position: absolute;
+
+   
+  
+    height: 32px;
+    width: 157.375;
+    left: 79px;
+    width: 148.375;
+    right: 101.625;
+    color: #f2f2f2;
+    
+
+}
+
+#myselect{
+    position: absolute;
+
+    bottom: 83px;
+    width: 304px;
+
+    top: 40px;
+    bottom: 51px;
+   
+
+
+    left: 14px;
+    width: 285px;
+
+
+
+      margin: auto;
+    -webkit-appearance: none;
+   
+    overflow: hidden;
+    height: 40px;
+    
+    cursor: pointer;
+    border-radius: 0;
+}
+button{
+       color: white;
+            border-radius: 4px;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+            background: rgb(28, 184, 65); 
+}
+
+::-webkit-slider-runnable-track {
+    background: #ddd;
+}
+
+/*
+ * 1. Set to 0 height and width, and remove border for a slider without a thumb
+ */
+::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px; /* 1 */
+    height: 40px; /* 1 */
+    background: #fff;
+    box-shadow: -100vw 0 0 100vw wheat; 
+    border: 2px solid #999; /* 1 */
+}
+
+::-moz-range-track {
+    height: 40px;
+    background: #ddd;
+}
+
+::-moz-range-thumb {
+    background: #fff;
+    height: 40px;
+    width: 20px;
+    border: 3px solid #999;
+    border-radius: 0 !important;
+    box-shadow: -100vw 0 0 100vw white;
+    box-sizing: border-box;
+}
+
+::-ms-fill-lower { 
+    background: white;
+}
+
+::-ms-thumb { 
+    background: #fff;
+    border: 2px solid #999;
+    height: 40px;
+    width: 20px;
+    box-sizing: border-box;
+}
+
+::-ms-ticks-after { 
+    display: none; 
+}
+
+::-ms-ticks-before { 
+    display: none; 
+}
+
+::-ms-track { 
+    background: #ddd;
+    color: transparent;
+    height: 40px;
+    border: none;
+}
+
+::-ms-tooltip { 
+    display: none;
+}
+ #agent{
+    position: absolute;
+} 

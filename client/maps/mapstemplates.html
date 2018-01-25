@@ -1,0 +1,6 @@
+<div >
+    <div id="map"></div>
+    <div id="class" ng-repeat="marker in $ctrl.markers">
+         <a href="#" ng-click="$ctrl.openInfoWindow($event, marker)">{{marker.title}}</a> 
+    </div>
+</div>

@@ -1,0 +1,24 @@
+<table>
+    <thead>
+        <th>JobName</th>
+        <th>Description</th>
+        <th> Location</th>
+        <th>Publish date</th>
+        <th> Skills</th>
+        <th>Delete </th>
+    </thead>
+    <tbody>
+        <tr calss="main"> JOB LIST</tr>
+        <tr ng-repeat='name in $ctrl.myjobs track by $index'>
+            <td> {{name.jobname[0]}} </td>
+            <td> {{name.description[0]}}</td>
+            <td> {{name["location"][0]}}</td>
+            <td>{{name.pub_date[0]}}</td>
+            <td>
+                <span ng-repeat='name1 in name.jobSkills track by $index'>  {{name1}}</br></span>
+            </td>
+            <td><img ng-click="$ctrl.deletejob($index,name._id)" src="http://www.iconsdb.com/icons/preview/green/cancel-xxl.png" width="30"
+                    height="30"></td>
+        </tr>
+    </tbody>
+</table>

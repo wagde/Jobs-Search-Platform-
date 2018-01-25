@@ -1,0 +1,17 @@
+<table>
+    <thead>
+        <th>Name</th>
+        <th>Email</th>
+        <th> location</th>
+        <th> Skills</th>
+    </thead>
+    <tbody>
+        <tr calss="main">USER PROFILE</tr>
+         <tr ng-repeat='user in $ctrl.users track by $index'>
+            <td> <span >{{user.firstname}}</span>                </td>
+            <td> <span>{{user.email}}</span> </td>
+            <td> <span> {{user["location "]}}</span>                </td>
+            <td> <span ></span>                </td>
+              </tr>
+    </tbody>
+</table>

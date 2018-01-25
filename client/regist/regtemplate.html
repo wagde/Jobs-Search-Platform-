@@ -1,0 +1,21 @@
+<div class="regist">
+<form>
+  <label for="username">UserName</label>
+  <input class="regform" ng-model="username" id="title" type="text" required>
+  <br><label for="password">Password</label>
+  <input class="regform" ng-model="password" type="password" placeholder="Enter Password" name="psw" required>
+  <br><label for="email">Email</label>
+  <input class="regform" type="email" ng-model="email" placeholder="Enter Email" name="email" required>
+  <br><label for="Loction">Loction</label>
+  <input class="regform" id="address" type="text" ng-model="location" placeholder="Enter your loction" name="loction" required>
+  <br><label for="skillo">Skills</label>
+  <select ng-model="skill">
+  <option ng-repeat="skill in $ctrl.registService.skills track by $index" value={{skill.id}} >{{skill.skill}}</option>
+  </select>
+  <button ng-click="$ctrl.registService.addskill(skill)"> Add Skill</button>
+  <div ng-repeat="skillch in $ctrl.registService.skillslist track by $index">{{$ctrl.registService.skills[skillch-1].skill}} <span ng-click="$ctrl.registService.deleteSkill($index)">(X)</span> </div>
+  <br>
+  <input type="button" value="REGIST" ng-click="$ctrl.registService.GetRegDeatil(username,password,email,location)" id="body"
+    type="button">
+</form>
+  </div>

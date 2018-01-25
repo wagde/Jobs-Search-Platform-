@@ -1,0 +1,9 @@
+<form id="serform">
+  <select value="jobname" ng-model="search1" id="serselect">
+  <option  value="jobname">Jobname</option>
+  <option value="description">Description</option>
+  <option value="pub_date">Publish Date </option>
+   <option value="location">Location </option>
+</select>
+  <input ng-model="search" ng-change="$ctrl.searchserv.searchfunction(search,search1)"  id="ser" type="text" name="search" placeholder="Search..">
+</form>

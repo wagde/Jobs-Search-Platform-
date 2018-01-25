@@ -1,0 +1,23 @@
+<table>
+    <thead>
+        <th>JobName</th>
+        <th>Description</th>
+        <th> Location</th>
+        <th>skills</th>
+        <th>Add  </th>
+    </thead>
+    <tbody>
+        <td> <input ng-model="jobname" type="text" name="" value=""> </td>
+        <td> <textarea ng-model="description" rows="" cols=""></textarea> </td>
+        <td> <input ng-model="Locationt"  id="address" type="text" name="" value=""> </td>
+        <td>
+            <select ng-model="skill">
+        <option ng-repeat="skill in $ctrl.addjobServer.skills track by $index" value={{skill.id}} >{{skill.skill}}</option>
+        </select>
+            <button ng-click="$ctrl.addjobServer.addskill(skill)"> Add Skill</button>
+            <div ng-repeat="skillch in $ctrl.addjobServer.skillslist track by $index">{{$ctrl.addjobServer.skills[skillch-1].skill}} <span ng-click="$ctrl.addjobServer.deleteSkill($index)">(X)</span>                </div>
+        </td>
+        <td><button ng-click="$ctrl.addjobServer.addJob(jobname,description,Locationt)">Add Job </button> </td>
+        </tr>
+    </tbody>
+</table>    
